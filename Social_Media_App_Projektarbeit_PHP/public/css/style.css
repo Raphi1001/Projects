@@ -1,0 +1,220 @@
+.text-wrap {
+    white-space: normal;
+}
+
+.center-align {
+    padding-top: 50%;
+}
+
+.full-screen-height {
+    min-height: 100vh;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: rgb(196, 189, 255);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0);
+}
+
+.navbar-light .navbar-text {
+    color: rgba(0, 0, 0);
+}
+
+.nav-item {
+    margin: 0.2em;
+    z-index: 999;
+}
+
+.search {
+    margin: 0.3em;
+    height: 2em;
+}
+
+
+/* main */
+
+.main-height {
+    min-height: 65vh;
+    margin-top: 100px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: rgb(196, 189, 255);
+}
+
+.footer-link {
+    color: rgba(0, 0, 0);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.error {
+    color: red;
+    font-weight: bolder;
+}
+
+
+/* Alerts oben anzeigen*/
+
+.alert-fixed {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    opacity: 80%
+}
+
+.toolbar-center {
+    justify-content: center;
+    display: flex;
+}
+
+
+/*Login-Seite*/
+
+.login-field {
+    width: 400px;
+}
+
+
+/* Hilfe Seite */
+
+.accordion {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #5b5d5d;
+}
+
+.question-label,
+.answer {
+    padding: 1rem 2rem;
+}
+
+.question-label {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.question-label:hover {
+    background: rgba(0, 0, 0, 0.123);
+}
+
+.question-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.answer {
+    background: rgb(255, 255, 255);
+    font-size: 0.85em;
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.question-input {
+    display: none;
+}
+
+.question-input:checked~.answer {
+    display: block;
+}
+
+.question-input:checked~.question-label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+/*Beitrags-Seite*/
+
+.post-card {
+    width: 100%;
+}
+
+.post-img {
+    width: 100%;
+    height: 100%;
+}
+
+.foreground {
+    z-index: 999;
+}
+
+.profilePic {
+    width: 50px;
+    height: 50px;
+}
+
+.upload-img {
+    max-width: 300px;
+}
+
+.sort-bar {
+    max-width: 400px;
+    white-space: nowrap;
+}
+
+.comment {
+    max-width: 75%;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+
+/*User Info Page*/
+
+.fit-content {
+    height: fit-content;
+}
+
+.backButton {
+    padding-left: 100px;
+    padding-top: 120px;
+}
+
+a {
+    color: rgb(160, 152, 255);
+}
+
+a:hover {
+    color: green;
+}
