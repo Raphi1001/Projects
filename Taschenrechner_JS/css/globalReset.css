@@ -1,0 +1,9 @@
+/* Resets all styles to reduce browser differences */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}

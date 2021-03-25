@@ -1,0 +1,17 @@
+#results {
+    min-height: 189px;
+}
+
+#output {
+    min-height: 25px;
+}
+
+.background-gray {
+    background-color: #ebebeb;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 14px;
+}

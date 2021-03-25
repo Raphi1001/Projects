@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">´
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- global reset -->
+    <link rel="stylesheet" href="css/globalReset.css">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery ui js -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/scripts.js"></script>
+    <title>ToDo List</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>Input</h3>
+        <div class="input-group mb-3">
+            <input type="text" id="item" class="form-control" placeholder="New item">
+            <div class="input-group-append">
+                <button id="add" class="btn btn-outline-secondary">Add</button>
+            </div>
+        </div>
+
+        <h3>Controls</h3>
+
+        <div class="controls mb-3">
+            <ul>
+                <li>Add items to the list by clicking the "Add" button.</li>
+                <li>Remove an item from the list by double-clicking on it.</li>
+                <li>Drag items to change their order.</li>
+                <li>Hide the list by clicking the "Hide List" button.</li>
+
+            </ul>
+        </div>
+
+        <button id="hide" class="btn btn-outline-secondary mb-3">Hide List</button>
+
+
+        <h3>ToDo-List</h3>
+        <ol id="list">
+        </ol>
+
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- global reset -->
+    <link rel="stylesheet" href="css/globalReset.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- js -->
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Taschenrechner</h1>
+
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="col-md-4">Eingabe</th>
+                            <th scope="col" class="col-md-1"></th>
+                            <th scope="col">Bisheriger Verlauf</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="col-form-label font-weight-bold" for="input1">Eingabe Zahl 1</label>
+                                <input type="text" class="form-control" id="input1" placeholder="3,4">
+
+                                <label class="col-form-label font-weight-bold" for="input2">Eingabe Zahl 2</label>
+                                <input type="text" class="form-control" id="input2" placeholder="5">
+                                <div class="border mt-3 pb-1 background-gray">
+                                    <label class="col-form-label font-weight-bold" for="ouput">Ergebnis</label>
+                                    <div id="output"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-dark icon" onclick="calculate('+')">+</button>
+                                <button class="btn btn-dark icon" onclick="calculate('-')">-</button>
+                                <button class="btn btn-dark icon" onclick="calculate('/')">/</button>
+                                <button class="btn btn-dark icon" onclick="calculate('*')">*</button>
+                            </td>
+                            <td>
+                                <div class="border pt-2 background-gray">
+                                    <button class="btn btn-dark" onclick="clearResults()">Verlauf Löschen</button>
+                                    <div id="results"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
